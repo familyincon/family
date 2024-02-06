@@ -1,0 +1,32 @@
+<div class="container"> 
+    <div class="row g-3">
+        <form action="/editableuser/:id" method="POST">
+          <div class="col-md-6">
+            <label>Nombres</label>
+            <input type="text" class="form-control" name="nombres" placeholder="nombres"/>
+          </div>
+          <div class="col-md-6">
+            <label>Apellidos</label>
+            <input type="text" class="form-control" name="apellidos" placeholder="apellidos"/>
+          </div>
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="email"/>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" name="contrasena" placeholder="contraseña"/>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label"
+              >Confirmar Contraseña</label
+            >
+            <input type="password" class="form-control" id="inputPassword4" placeholder="contraseña"/>
+          </div>
+          <br />
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Registrar</button>
+          </div>
+        </form>
+      </div> 
+</div>

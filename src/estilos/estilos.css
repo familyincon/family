@@ -1,0 +1,108 @@
+.caja1{ 
+    background-color: #9B59B6;
+} 
+.lineam{ 
+    width: 30px; 
+    height: 50px;
+} 
+.padrebg{ 
+    background-image: url(/photos/background_1.jpg); 
+    background-size: cover; 
+    height: 680px;
+} 
+
+.info{ 
+    background-color: white; 
+    border-radius: 10px; 
+    color: black; 
+    opacity: 0.7; 
+    text-align: justify;
+}
+
+p{ 
+    font-size: 30px; 
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: justify; 
+}  
+
+#opfooter:link, #opfooter:visited, #opfooter:active{ 
+    color: white; 
+    text-decoration: none;  
+    -webkit-tap-highlight-color: transparent;
+}  
+
+#btnSesion{ 
+    background-color: rgb(241, 233, 233); 
+    color: #9B59B6; 
+    border-radius: 10px; 
+    padding: 10px; 
+    border-style: solid; 
+    border: 3px;  
+    text-decoration: none;
+}  
+
+#btnSesion:hover{ 
+    background-color: #27AE60; 
+}
+
+#bloquesesion{ 
+    background-image: url(/photos/fondo_iniciarsesion.png);  
+    background-size: cover;  
+    height: 200px; 
+    width: 100%;
+}  
+#pgcontacto{ 
+    background-image: url(/photos/fondo_iniciarsesion.png);  
+    background-size: cover;   
+    width: 100%;
+}
+/*#bloquecontact{ 
+    background-image: url(/photos/bloque_contacto.png);  
+    background-size: cover;  
+    height: 400px; 
+    width: 100%; 
+    border-radius: 10px;
+}*/ 
+#bloquecnt{ 
+    background-image: url(/photos/bloque_contacto.png);  
+    background-size: cover;    
+    height: 400px; 
+    width: 100%; 
+    border-radius: 1.25rem;  
+    margin-bottom: 25px;
+}
+
+#infobeneficios{ 
+    font-size: 15px;
+} 
+
+#btnContact{ 
+    background-color: rgb(241, 233, 233); 
+    color: #9B59B6; 
+    border-radius: 10px; 
+    padding: 15px; 
+    border-style: solid; 
+    border: 3px;  
+    text-decoration: none;
+} 
+
+#btnContact:hover{ 
+    background-color: #27AE60; 
+} 
+
+#footbox{ 
+    background-color: #000000; 
+} 
+
+#preguntas{ 
+    font-size: 10px;
+}  
+
+#boxbenefi{ 
+    box-shadow: 5px 5px 5px rgb(167, 160, 160);
+} 
+
+#boxcogniti{ 
+    box-shadow: 18px 15px 3px 2px rgba(0, 0, 255, .2);
+    /*box-shadow: 30px -16px teal;*/
+}
