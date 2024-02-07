@@ -1,7 +1,10 @@
 const User = require("../models/registro");
 const jwt = require("jsonwebtoken");
 const config = require("../config");
-const Role = require("../models/role");
+const Role = require("../models/role"); 
+
+//const express = require("express");
+//const router = express.Router();
 
 const signUp = async (req, res) => {
   const { nombres, apellidos, email, contrasena, activado, rol } = req.body;
@@ -25,9 +28,10 @@ const signUp = async (req, res) => {
   const savedUser = await newUser.save();
   const token = jwt.sign({ id: savedUser._id }, config, {
     expiresIn: 86400, //24horas
-  });
-
-  res.status(200).json({ token });
+  }); 
+  res.render("registroSucces")
+   //res.redirect("registroSucces") 
+  //res.status(200).json({ token });
 };
 
 const signin = async (req, res) => {
@@ -50,7 +54,9 @@ const signin = async (req, res) => {
 
   const token = jwt.sign({ id: userFound._id }, config, { expiresIn: 86400 });
 
-  res.json({ token });
+  //res.json({ token });  
+  //onsole.log(token)
+  res.render("menuTeens")
 };
 
 module.exports = { signUp, signin };

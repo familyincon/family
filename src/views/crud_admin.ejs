@@ -1,0 +1,17 @@
+<div class="row">  
+    <div class="col col-12">  
+      <h1>Usuarios Registrados:</h1>  
+      <% for(let i=0;i<registerList.length;i++){ %> 
+      <ul>  
+        <li> 
+          <p>Nombres: <%=registerList[i].nombres%></p> 
+          <p>Apellidos: <%=registerList[i].apellidos%></p> 
+          <p>Correos: <%=registerList[i].email%></p>
+        </li>  
+      </ul>  
+      <a href="/booluser/<%= registerList[i]._id %>">done</a>
+      <a href="/deleteuser/<%= registerList[i]._id %>">delete</a> 
+      <a href="/editableuser/<%= registerList[i]._id %>">update</a>
+      <% } %>
+    </div>
+  </div>

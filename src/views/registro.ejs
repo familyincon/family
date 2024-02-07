@@ -5,7 +5,7 @@
   <br />
   <br />
   <div class="row g-3">
-    <form action="/Users/add" method="POST">
+    <form action="/signup" method="POST">
       <div class="col-md-6">
         <label>Nombres</label>
         <input type="text" class="form-control" name="nombres"/>
@@ -14,7 +14,7 @@
         <label>Apellidos</label>
         <input type="text" class="form-control" name="apellidos"/>
       </div>
-      <div class="col-md-12">
+      <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
         <input type="email" class="form-control" id="inputEmail4" name="email"/>
       </div>
@@ -28,28 +28,20 @@
         >
         <input type="password" class="form-control" id="inputPassword4" />
       </div>
-      <br />
+      <br /> 
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label style="color: #27AE60;" class="form-check-label" for="flexCheckDefault">
+          Acepto terminos y condiciones
+        </label>
+      </div> 
+      <br>
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Registrar</button>
       </div>
-    </form>
-  </div> 
-  <div class="row">  
-    <div class="col col-12">  
-      <h1>Usuarios Registrados:</h1>  
-      <% for(let i=0;i<registerList.length;i++){ %> 
-      <ul>  
-        <li> 
-          <p>Nombres: <%=registerList[i].nombres%></p> 
-          <p>Apellidos: <%=registerList[i].apellidos%></p> 
-          <p>Correos: <%=registerList[i].email%></p>
-        </li>  
-      </ul>  
-      <a href="/booluser/<%= registerList[i]._id %>">done</a>
-      <a href="/deleteuser/<%= registerList[i]._id %>">delete</a> 
-      <a href="/editableuser/<%= registerList[i]._id %>">update</a>
-      <% } %>
-    </div>
-  </div>
-</div>
+    </form> 
+  </div>  
+
+</div> 
+<br>
 <%- include('partials/footer') %>

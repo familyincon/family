@@ -68,6 +68,14 @@ router.get("/home",(req,res)=>{
     res.render('home',{v})
 })
 
+router.get("/registroSucces",(req,res)=>{ 
+  res.render('registroSucces')
+})
+
+router.get("/menuTeens", (req,res)=>{ 
+  res.render('menuTeens')
+})
+
 router.get("/procesos", (req,res)=>{res.render("procesos")}) 
 //metodo post  
 router.post('/Users/add', async (req,res)=>{   
